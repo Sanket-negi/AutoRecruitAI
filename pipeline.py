@@ -22,7 +22,7 @@ SAMPLE_JOBS = [
         "title": "BackEnd Developer",
         "company": "REAL DATA Ltd",
         "location": "Banglore",
-        "description": "Worked on API Development , comfortable with Springboot , Spring , Next.js and Nodejs"   
+        "description": "Worked on API Development , comfortable with Springboot , Spring , Next.js and Nodejs~~"   
     },
     {
         "title": "AI/ML Engineer",
@@ -82,7 +82,7 @@ def generate_messages_node(state: AppState) -> AppState:
         
         if score < 5:
             # Custom message for low scores
-            prompt = f"""You are a job application assistant named Ms Merry [Senior Executive HR].
+            prompt = f"""You are a job application assistant of a HR named Ms Merry [Senior Executive HR].
             Behave like a professional HR
             Given this job description and resume, write a short job rejection application message, t=due to failure of satisfying some specific required skills.
             use correct job details provided below:
@@ -101,7 +101,7 @@ def generate_messages_node(state: AppState) -> AppState:
             msg = generate_message_gemma(prompt)
         else:
             prompt = f"""
-You are a job application assistant named Ms Merry[Senior Executive HR].
+You are a job application assistant of a HR named Ms Merry[Senior Executive HR].
 Behave like a professional HR
 Given this job description and resume, write a short job application message.
 use correct job details provided below:
