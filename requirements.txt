@@ -4,3 +4,4 @@ langgraph
 google.generativeai
 langchain_community
 requests
+ollama
