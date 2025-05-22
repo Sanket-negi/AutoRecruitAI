@@ -1,0 +1,6 @@
+PyMuPDF
+langchain
+langgraph
+google.generativeai
+langchain_community
+requests
