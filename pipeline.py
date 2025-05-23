@@ -115,6 +115,7 @@ Resume:
 Sincerely,
 Ms Merry
 Senior Executive HR
+and dont write your predefined headers like Okay, here's a rejection email draft based on the provided job description and resume, highlighting the areas where the candidate fell short.
 """
             msg = generate_message_gemma(prompt)
         
