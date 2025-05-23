@@ -33,10 +33,12 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 def generate_message_gemma(prompt: str) -> str:
     try:
         model = genai.GenerativeModel("gemini-2.0-flash")
+        print("Starting Gemini API call...")
         response = model.generate_content(
             prompt,
             generation_config={"max_output_tokens": 150}
         )
+        print("Gemini API call finished.")
         return response.text.strip()
     except Exception as e:
         return f"Exception: {str(e)}"
